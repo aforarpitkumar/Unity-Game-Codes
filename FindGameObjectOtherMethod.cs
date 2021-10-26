@@ -7,3 +7,6 @@ public class SomeClassScript : MonoBehaviour {
     target = GameObject.Find("Cube");
   }
 }
+
+// The shortcoming of this method is that it just returns the first item it finds with the given name. 
+// If you have multiple Cube objects, you won’t know which one you are getting.
