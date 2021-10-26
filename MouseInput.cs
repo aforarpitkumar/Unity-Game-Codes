@@ -12,6 +12,11 @@ Unlike button presses, the mouse movement is measured by the amount the mouse ha
 last frame only. Basically, holding a key will cause a value to increase until it maxes out at –1 or 1
 (depending on whether is it positive or negative). The mouse movement, however, will generally
 have smaller numbers because it is measured and reset every frame.
-
 */
 
+float mxVal = Input.GetAxis("Mouse X");
+float myVal = Input.GetAxis("Mouse Y");
+  if(mxVal != 0)
+    print("Mouse X movement selected: " + mxVal);
+  if(myVal != 0)
+    print("Mouse Y movement selected: " + myVal);
